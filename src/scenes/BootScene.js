@@ -11,7 +11,7 @@ export default class BootScene extends Phaser.Scene {
     this.load.image('PrincessCastle', 'assets/images/PrincessCastle.png');
     this.load.image('Statue', 'assets/images/Statue.png');
     this.load.image('TempleOfLove', 'assets/images/TempleOfLove.png');
-    this.load.image('villager', 'assets/images/villager.png');
+    this.load.image('villager', 'assets/images/Villager.png');
     this.load.image('Princess', 'assets/images/Princess.png'); // Load princess image
     this.load.image('Knight', 'assets/images/Knight.png'); // Load knight image
     this.load.image('Dragon1', 'assets/images/Dragon1.png'); // Load first dragon image
