@@ -6,7 +6,7 @@ export default class UIScene extends Phaser.Scene {
   }
 
   create() {
-    const text = this.add.text(10, 10, 'Village RTS', {
+    const text = this.add.text(10, 10, 'Désirée the Empress', {
       fontSize: '20px',
       fill: '#ffffff',
     });

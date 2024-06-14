@@ -20,7 +20,7 @@ const UI = () => {
 
   return (
     <div className="ui-container">
-      <h1>Village RTS</h1>
+      <h1>Désirée the Empress</h1>
       {villagerSelected && (
         <div className="menu">
           <img src="assets/images/TempleOfLove.png" alt="Temple of Love" />
