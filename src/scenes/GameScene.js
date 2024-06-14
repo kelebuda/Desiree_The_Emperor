@@ -23,17 +23,17 @@ export default class GameScene extends Phaser.Scene {
     this.statue = this.add.sprite(width / 2, height - 75, 'Statue').setScale(0.3);
 
     // Add titles for buildings
-    this.add.text(this.princessCastle.x, this.princessCastle.y - 100, 'Princess Castle', {
+    this.add.text(this.princessCastle.x, this.princessCastle.y - 100, 'Désirée\'s Castle', {
       fontSize: '16px',
       fill: '#ffffff'
     }).setOrigin(0.5);
 
-    this.add.text(this.templeOfLove.x, this.templeOfLove.y - 100, 'Temple of Princess', {
+    this.add.text(this.templeOfLove.x, this.templeOfLove.y - 100, 'Temple of Désirée', {
       fontSize: '16px',
       fill: '#ffffff'
     }).setOrigin(0.5);
 
-    this.add.text(this.statue.x, this.statue.y - 100, 'Statue of Princess', {
+    this.add.text(this.statue.x, this.statue.y - 100, 'Statue of Désirée', {
       fontSize: '16px',
       fill: '#ffffff'
     }).setOrigin(0.5);
@@ -66,7 +66,7 @@ export default class GameScene extends Phaser.Scene {
     });
 
     // Love points text
-    this.lovePointsText = this.add.text(width / 2, 20, 'Love Points: 0', {
+    this.lovePointsText = this.add.text(width / 2, 25, 'Love Points = Age: 0', {
       fontSize: '20px',
       fill: '#ffffff',
     }).setOrigin(0.5);
@@ -151,7 +151,7 @@ export default class GameScene extends Phaser.Scene {
     this.knight.destroy();
     this.princess.destroy();
     this.templeOfLove.setTint(0xff0000); // Shake effect simulation
-    this.add.text(this.templeOfLove.x, this.templeOfLove.y - 150, 'fick mich baby', {
+    this.add.text(this.templeOfLove.x, this.templeOfLove.y - 150, 'Fick mich i mim tempel!', {
       fontSize: '20px',
       fill: '#ffffff',
     }).setOrigin(0.5);
@@ -161,10 +161,23 @@ export default class GameScene extends Phaser.Scene {
         this.templeOfLove.clearTint();
       }
     });
+    this.time.addEvent({
+      delay: 5000, // Wait for 5 seconds
+      callback: () => {
+        this.showCelebrationScreen();
+      }
+    });
   }
 
   wrongAnswer() {
     this.princessText.setText('Incorrect. Try again.');
+  }
+
+  showCelebrationScreen() {
+    const { width, height } = this.scale;
+    const celebrationImage = this.add.image(width / 2, height / 2, 'celebration');
+    celebrationImage.setDisplaySize(width / 2, height / 2); // Make the image half the screen size
+    celebrationImage.setOrigin(0.5, 0.5); // Center the image
   }
 
   update() {
