@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Desiree_The_Empress/static/css/main.82fa9d9d.css",
-    "main.js": "/Desiree_The_Empress/static/js/main.3ed50a2a.js",
+    "main.js": "/Desiree_The_Empress/static/js/main.81fc5d6b.js",
     "static/js/488.7f80e0ad.chunk.js": "/Desiree_The_Empress/static/js/488.7f80e0ad.chunk.js",
     "index.html": "/Desiree_The_Empress/index.html",
     "main.82fa9d9d.css.map": "/Desiree_The_Empress/static/css/main.82fa9d9d.css.map",
-    "main.3ed50a2a.js.map": "/Desiree_The_Empress/static/js/main.3ed50a2a.js.map",
+    "main.81fc5d6b.js.map": "/Desiree_The_Empress/static/js/main.81fc5d6b.js.map",
     "488.7f80e0ad.chunk.js.map": "/Desiree_The_Empress/static/js/488.7f80e0ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82fa9d9d.css",
-    "static/js/main.3ed50a2a.js"
+    "static/js/main.81fc5d6b.js"
   ]
 }
